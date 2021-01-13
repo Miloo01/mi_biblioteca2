@@ -6,7 +6,6 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.string :status
       t.date :date_borrowed
       t.date :date_returned
-      
 
       t.timestamps
     end

@@ -15,7 +15,6 @@ class BooksTest < ApplicationSystemTestCase
     click_on "New Book"
 
     fill_in "Author", with: @book.author
-    fill_in "Date", with: @book.date
     fill_in "Date borrowed", with: @book.date_borrowed
     fill_in "Date returned", with: @book.date_returned
     fill_in "Status", with: @book.status
@@ -31,7 +30,6 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Author", with: @book.author
-    fill_in "Date", with: @book.date
     fill_in "Date borrowed", with: @book.date_borrowed
     fill_in "Date returned", with: @book.date_returned
     fill_in "Status", with: @book.status
